@@ -1,17 +1,19 @@
 Algoritmo InvertirCadena
+    //Definimos variables
     Definir frase, fraseInvertida Como Caracter
     Definir i, longitudFrase Como Entero
-    
-    Escribir "Ingrese una cadena de texto o frase:"
+	
+    //pedimos al usuario que ingrese los datos
+    Escribir "Ingrese un texto o una frase "
     Leer frase
     
     longitudFrase <- Longitud(frase)
     fraseInvertida <- ""
     
-    // voy armando la frase de atras para adelante
+    // este ciclo va armando la frase de atras para adelante
     Para i <- longitudFrase Hasta 1 Con Paso -1 Hacer
         fraseInvertida <- fraseInvertida + Subcadena(frase, i, i)
     FinPara
-    
-    Escribir "La frase en latin invocador de demonios es: ", fraseInvertida
+    //Retorna por consola la frase invertida
+    Escribir "La frase invertida es : ", fraseInvertida
 FinAlgoritmo
